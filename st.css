@@ -1,7 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 *{
   margin: 0px;
-  padding: 1px;
+  padding: 0px;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
+body{
+  background-color: hsl(216, 12%, 8%);
+}
+
+.ratingCard{
+  border-radius: 15px;
+  padding: 20px;
+  font-family: 'Overpass', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  margin: 100px auto;
+  max-width: 30%;
+  min-width: 310px;
+  background-color: rgba(31,38,48,1);
+}
+
+.ratingCardHead{
+  margin-bottom: 20px;
+}
+
+.iconCont{
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(38,47,56,1);
+  text-align: center;
+  padding: 11px;
+}
+
+.iconCont img{
+  display: block;
+}
+
+.ratingCardBody{
+  margin-bottom: 30px;
+}
+
+.ratingCardBody h1{
+  margin-bottom: 24px;
+}
+
+.ratingCardBody p{
+  color: hsl(217, 12%, 63%);
+}
+
+.ratingCardFoot ul{
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.ratingCardFoot ul li{
+  text-align: center;
+  list-style: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(38,47,56,1);
+  cursor: pointer;
+}
+
+.ratingCardFoot ul li span{
+  display: block;
+  width: min-content;
+  margin: 25% auto;
+}
+
+#subBtn{
+  background-color: hsl(25, 97%, 53%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#subBtn:hover{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+#ratingCardHover{
+  display: none;
+}
+
+#receivedRating{
+  margin-top: 30px;
+  background-color: rgba(38,47,56,1);
+  padding: 10px 20px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  color:hsl(25, 97%, 53%);
+}

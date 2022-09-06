@@ -29,41 +29,53 @@
   </head>
   <body>
 
-    <!--Before rating selected-->
+    <!--card before rating is selected-->
     <main class="ratingCard">
-      <header>
+      <!--card header section-->
+      <header class="ratingCardHead">
         <div class="iconCont"><img src="./images/icon-star.svg" /></div>
       </header>
-      <section>
+
+      <!--card body section-->
+      <section class="ratingCardBody">
         <h1>How did we do?</h1>
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
       </section>
-      <footer>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+
+      <!--card footer section-->
+      <footer class="ratingCardFoot">
+        <ul >
+          <li class="rates"><span>1</span></li>
+          <li class="rates"><span>2</span></li>
+          <li class="rates"><span>3</span></li>
+          <li class="rates"><span>4</span></li>
+          <li class="rates"><span>5</span></li>
         </ul>
-        <p>Submit</p>
+        <p id="subBtn">Submit</p>
       </footer>
     </main>
 
-    <!-- After rating selected -->
-    <main class="ratingCardHover">
-      <header>
-        <div class="iconCont"><img src="./images/icon-star.svg" /></div>
-        <p>You selected <span id="ratingSelected"></span> out of 5</p>
+    <!--card after rating is selected -->
+    <main id="ratingCardHover" class="ratingCard">
+      <!--card header section-->
+      <header class="ratingCardHead">
+        <div id="bigImage">
+          <img src="./images/illustration-thank-you.svg">
+        </div>
+        <p id="receivedRating" >
+          You selected <span id="ratingSelected"></span> out of 5
+        </p>
       </header>
-      <section>
+
+      <!--card body section-->
+      <section class="ratingCardBody">
         <h1>Thank you!</h1>
         <p>
           We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
+          more support, don't hesitate to get in touch!
         </p>
       </section>
     </main>
